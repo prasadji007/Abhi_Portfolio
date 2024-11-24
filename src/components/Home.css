@@ -1,0 +1,115 @@
+/* Home Container */
+.home {
+    padding: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    background-color: #121212; /* Dark grey-black */
+    overflow: hidden;
+    position: relative; /* To handle custom cursor effects */
+    margin-bottom: 70px;
+  }
+  
+  /* Card Styling */
+  .card {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.7), rgba(50, 50, 50, 0.9)); /* Game-red and dark grey */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 1.5rem;
+    border-radius: 16px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Darker shadow */
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0); /* Default position */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 1; /* Ensure visibility */
+    z-index: 5;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover Effect */
+  .card:hover {
+    transform: translateY(-10px) scale(1.03); /* Lift and scale */
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6); /* Red shadow for hover */
+  }
+  
+  /* Text Styling */
+  .card h2,
+  .card h3,
+  .card p {
+    margin: 0.5rem 0;
+    color: #f8f8f8; /* Light grey for readability */
+    transform: translateY(0); /* Default position */
+    opacity: 1; /* Fully visible */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  /* Hovered Text Animation */
+  .card:hover h2,
+  .card:hover h3,
+  .card:hover p {
+    transform: translateY(-5px); /* Slight upward movement */
+  }
+  
+  /* Custom Cursor */
+  .cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.6) 0%, rgba(50, 50, 50, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen; /* Cool blending effect */
+    transition: transform 0.2s ease;
+  }
+  
+  /* Body Styling */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #2b2b2b); /* Dark grey-black gradient */
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal scroll from background elements */
+  }
+  
+  /* Background Design Elements */
+  .background-design {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.4), transparent 60%),
+      radial-gradient(circle at 80% 80%, rgba(100, 100, 100, 0.4), transparent 60%);
+    mix-blend-mode: lighten;
+    z-index: -1; /* Place below content */
+    animation: moveBackground 15s linear infinite;
+  }
+  
+  /* Soft Noise Texture Overlay */
+  .background-noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/noise.png"); /* Subtle noise texture */
+    opacity: 0.1;
+    z-index: -2;
+  }
+  
+  /* Animation for Background Movement */
+  @keyframes moveBackground {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-10px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
