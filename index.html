@@ -5,8 +5,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>अभिमन्यु
-    </title>
+    <title>Abhimanyu Prasad</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -31,115 +30,145 @@
     <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
         <h1>Abhimanyu Prasad</h1>
-        <h2>Developer </h2>
+        <h2>System Engineer | Full-Stack Developer</h2>
         <div id="menu">
             <a onclick="showabout()">about</a>
             <a onclick="showwork()">work</a>
             <a onclick="showcontact()">contact</a>
         </div>
-        
     </div>
+    
     <div id="work_container" class="container">
         <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
         <h1>works.</h1>
         <section>
-            <h2>TCS Assistant System Engineer (March 2024 to Current)</h2>
-            <p>
- <li>Improved uptime and reliability of automation workflows by debugging and optimizing a Node.js stream series implementation, ensuring consistent system performance.</li>
-<li>Worked with Azure Function Apps to develop serverless backend logic and created code snippets for handling inbound and outbound integrations across cloud services.</li>
-<li>Used Postman to rigorously test backend API endpoints and managed source control with GIT.</li>
-<li>Implemented routing, middleware, and controller logic for RESTful APIs using modern ES6 syntax, and optimized the development workflow with tools like Webpack and Grunt.</li>
-
-            </p>
+            <h2>System Engineer, TCS</h2>
+            <p><strong>March 2024 - Present</strong></p>
+            <p><strong>Tech Stack:</strong> Java, Spring Boot, Node.js, Express.js, TypeScript, Azure (AKS, Cosmos DB, Functions), HubeMQ, Databricks, JFrog, SonarQube</p>
+            <ul style="margin-left: 20px;">
+                <li>Designed and developed <strong>RESTful microservices</strong> using Spring Boot and Node.js, acting as primary technical contact for API contracts and requirement gathering across project teams</li>
+                <li>Engineered a <strong>request batching mechanism</strong> with retry logic and exponential backoff to handle API rate limiting, reducing HTTP 429 errors by 20%</li>
+                <li>Developed a <strong>multithreaded data ingestion service</strong> using Java concurrent utilities across 6 AKS node pools, achieving 50% reduction in processing time (20s > 10s per batch)</li>
+                <li>Architected and deployed complete Azure cloud environment, building CI/CD deployment pipelines using YAML and integrating Azure Functions for serverless orchestration</li>
+                <li>Redesigned partition key strategy for Azure Cosmos DB collections to eliminate hot partitions, reducing RU consumption by 7% per hour</li>
+            </ul>
             <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;SharePoint</div>
-                <div><i class="fas fa-circle"></i>&nbsp;PowerShell</div>
-                <div><i class="fas fa-circle"></i>&nbsp;PowerPlatform</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Azure Admins</div>
-
+                <div><i class="fas fa-circle"></i>&nbsp;Java</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Spring Boot</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Azure AKS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Microservices</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Cosmos DB</div>
             </div>
-            <!-- <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button> -->
         </section>
+        
         <section>
-            <h2>Scale AI (Remotask) Tasker, Reviewer (Sept 2023 to Jan2024)</h2>
-            <p>
-                As a Prompt Engineer at Scale AI, I focused on crafting ethical and effective AI prompts, conducting data annotations, and auditing AI systems.            </p>
+            <h2>AI Training Specialist, Scale AI</h2>
+            <p><strong>Sept 2023 - Jan 2024</strong></p>
+            <p><strong>Tech Stack:</strong> LLMS, Prompt Engineering, Quality Assurance, NLP</p>
+            <ul style="margin-left: 20px;">
+                <li>Developed detailed NLP model quality metrics and annotation guidelines for 6-member QA team, improving annotation consistency</li>
+                <li>Mentored junior reviewers on quality standards and edge-case handling, driving 20% reduction in low-quality responses</li>
+            </ul>
             <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;AI Trainer</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Data Accuracy</div>
-                <!-- <div><i class="fas fa-circle"></i>&nbsp;</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Azure Admins</div> -->
-
+                <div><i class="fas fa-circle"></i>&nbsp;AI Training</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Prompt Engineering</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Quality Assurance</div>
+                <div><i class="fas fa-circle"></i>&nbsp;LLM</div>
             </div>
-            
+        </section>
+
+        <section>
+            <h2 style="margin-top: 30px;">Jobify - Intelligent Job Matching System</h2>
+            <p><strong>2024-2025</strong></p>
+            <p><strong>Tech Stack:</strong> Spring Boot, Node.js, Java, OpenAI API, MongoDB, PostgreSQL, Redis, Docker, JWT, React</p>
+            <ul style="margin-left: 20px;">
+                <li>Architected <strong>microservices-based job platform</strong> with Spring Boot recommendation engine and Node.js REST gateway</li>
+                <li>Implemented <strong>NLP-driven skill extraction</strong> and vector embeddings using LangChain with MongoDB and PostgreSQL</li>
+                <li>Integrated Redis caching for sub-millisecond response times and 25% data access cost reduction</li>
+                <li>Implemented JWT-based authentication with Spring Security and containerized services with Docker Compose</li>
+            </ul>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Spring Boot</div>
+                <div><i class="fas fa-circle"></i>&nbsp;NLP</div>
+                <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
+                <div><i class="fas fa-circle"></i>&nbsp;PostgreSQL</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Docker</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Redis</div>
+            </div>
         </section>
     </div>
+    
     <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-            <h1>about.</h1>
-            <section>
-                <h2>about me</h2>
-                <p>
-                    Hi, I'm Abhimanyu Prasad, an enthusiastic and detail-oriented Assistant System Engineer currently working at TCS. With a background in Electrical Engineering (B.Tech) from RCC Institute of Information Technology (CGPA: 8.37), I have transitioned into the tech world, leveraging my technical skills to deliver efficient solutions.
-
-My journey has been shaped by roles that challenged me to push boundaries:
-
-            </p> 
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about.</h1>
+        <section>
+            <h2>about me</h2>
+            <p>Hi, I'm <strong>Abhimanyu Prasad</strong>, an enthusiastic and detail-oriented System Engineer currently working at TCS. With a background in <strong>Electrical Engineering (B.Tech)</strong> from RCC Institute of Information Technology (CGPA: 8.37), I have successfully transitioned into the tech world, leveraging my technical skills to deliver efficient and scalable solutions.</p>
+            <p class="break">My journey has been shaped by roles that challenged me to push boundaries. I specialize in designing microservices architectures, working with cloud platforms like Azure, and building robust backend systems using Java and Node.js.</p>
+            <p class="break">In my free time, I'm likely exploring new technologies, solving coding challenges, or contributing to open-source projects.</p>
+        </section>
+        
+        <section>
+            <h2>Technical Skills</h2>
             <p class="break">
-                In free time, I’m likely exploring new technologies, solving coding challenges, or contributing to open-source tasks. 
+                <b>Languages:</b> Java (SE/EE), JavaScript, SQL, C++
             </p>
-            
-            <!-- <p class="break">
-            </p> -->
-                <!-- <p>
-SKILLS SNAPSHOT
-                </p> -->
-            </section>
-            <section>
-                <h2>Skills Snapshot</h2>
-                <p class="break">
-                    <b>Programming Languages:</b> Java, C++, JavaScript, SQL.
+            <p class="break">
+                <b>Frameworks:</b> Spring Boot, Spring Security, Node.js, Express.js, RESTful APIs, Microservices
+            </p>
+            <p class="break">
+                <b>Cloud/DevOps:</b> Azure (AKS, Functions, Cosmos DB, Blob Storage), Docker, Kubernetes, CI/CD, YAML
+            </p>
+            <p class="break">
+                <b>Databases:</b> MySQL, Cosmos DB, Redis, MongoDB, PostgreSQL
+            </p>
+            <p class="break">
+                <b>Tools:</b> Git, Postman, JFrog, SonarQube, RabbitMQ, Databricks, LangChain
+            </p>
+            <p class="break">
+                <b>Concepts:</b> System Design, OOP, Multithreading, Distributed Systems, DSA
+            </p>
+        </section>
 
-                </p>
-                <p class="break">
-                    <b>Frameworks & Tools: </b> ExpressJS, ReactJS, NodeJS, HTML5, CSS, Azure Admin Center, Postman.
-                </p>
-                <p class="break">
+        <section>
+            <h2>Education</h2>
+            <p><strong>RCC Institute of Information Technology, Kolkata</strong></p>
+            <p class="break">B.Tech - Electrical Engineering | CGPA: 8.37 | 2019 - 2023</p>
+        </section>
 
-<b>Achievements: </b> 3-star on CodeChef (Max rating: 1620) and over 300 problems solved across coding platforms.
-                </p>
-            </section>
-        </div>
-          <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <!-- <h1>contact.</h1> -->
-            <section class="contact">
-                <h1>Contact</h1>
-                <!-- <h3>Contact Me</h3> -->
-                <p>
-                  Connect with me on:
-                  <a href="https://www.linkedin.com/in/prasad11774/" target="_blank" rel="noopener noreferrer">LinkedIn</a>,
-                  <a href="https://github.com/prasadji007" target="_blank" rel="noopener noreferrer">GitHub</a>,
-                  <a href="https://www.codechef.com/users/rvtxxabhi" target="_blank" rel="noopener noreferrer">CodeChef</a>,
-                  <a href="https://leetcode.com/u/prasadji/" target="_blank" rel="noopener noreferrer">LeetCode</a>.
-                </p>
-              </section>
-            <!-- <section>
-                <h2>contact me</h2>
-                <p>
-                    Connect with me on:
-                    <a href="https://www.linkedin.com/in/prasad11774/" target="_blank" rel="noopener noreferrer">LinkedIn</a>,
-                    <a href="https://github.com/prasadji007" target="_blank" rel="noopener noreferrer">GitHub</a>,
-                    <a href="https://www.codechef.com/users/rvtxxabhi" target="_blank" rel="noopener noreferrer">CodeChef</a>,
-                    <a href="https://leetcode.com/u/prasadji/" target="_blank" rel="noopener noreferrer">LeetCode</a>.
-                  
-                </p>
-            </section> -->
-        </div>
-        <div id="footer">
-            Have a great future to reader <br> <a href="">Made with ❤.</a>
-        </div>
+        <section>
+            <h2>Certifications</h2>
+            <p class="break">
+                <b>Microsoft AZ-900 Certified</b> — Azure Architecture, Compute Services, Management and Governance
+            </p>
+            <p class="break">
+                <b>Google Cloud Platform (GCP)</b> — 12 Skill Badges including Kubernetes in GCP, Cloud Run, DevOps Essentials
+            </p>
+        </section>
+    </div>
+    
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <section class="contact">
+            <h1>Contact</h1>
+            <p>📍 Kolkata, West Bengal</p>
+            <p>📞 <a href="tel:+917740302108">+91/7740302108</a></p>
+            <p>📧 <a href="mailto:prasad117@gmail.com">prasad117@gmail.com</a></p>
+            <p style="margin-top: 30px;">Connect with me on:</p>
+            <p>
+                <a href="https://www.linkedin.com/in/prasad11774/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+                <a href="https://github.com/prasadji007" target="_blank" rel="noopener noreferrer">GitHub</a> •
+                <a href="https://www.codechef.com/users/rvtxxabhi" target="_blank" rel="noopener noreferrer">CodeChef</a> •
+                <a href="https://leetcode.com/u/prasadji/" target="_blank" rel="noopener noreferrer">LeetCode</a> •
+                <a href="https://abhimanyu-prasad.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio Site</a>
+            </p>
+        </section>
+    </div>
+    
+    <div id="footer">
+        Have a great future reader <br> <a href="">Made with ❤.</a>
+    </div>
+    
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
